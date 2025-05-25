@@ -1,0 +1,10 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+#header, #menu, #content, #footer {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}

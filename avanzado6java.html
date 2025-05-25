@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple CAPTCHA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    #captcha-box {
+      margin-bottom: 20px;
+      padding: 15px 30px;
+      font-size: 30px;
+      letter-spacing: 5px;
+      background-color: #e0e0e0;
+      font-weight: bold;
+      transform: rotate(-2deg);
+      color: #333;
+      text-shadow: 1px 1px #aaa;
+      border: 2px dashed #999;
+      display: inline-block;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 18px;
+      width: 200px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    #message {
+      font-weight: bold;
+      margin-top: 15px;
+      color: green;
+    }
+
+    #message.error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CAPTCHA Verification</h2>
+
+  <div id="captcha-box">----</div>
+
+  <input type="text" id="user-input" placeholder="Enter CAPTCHA" />
+
+  <div>
+    <button onclick="checkCaptcha()">Verify</button>
+    <button onclick="generateCaptcha()">Refresh</button>
+  </div>
+
+  <div id="message"></div>
+
+  <script src="script6avanzado.js"></script>
+
+</body>
+</html>

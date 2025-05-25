@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <style>
+    body {
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculadora {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    #pantalla {
+      width: 100%;
+      height: 50px;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      text-align: right;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #fff;
+    }
+
+    .botones {
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      gap: 10px;
+    }
+
+    button {
+      padding: 15px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #444;
+      color: white;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+
+    .operador {
+      background-color: #f57c00;
+    }
+
+    .operador:hover {
+      background-color: #fb8c00;
+    }
+
+    .igual {
+      background-color: #388e3c;
+      grid-column: span 2;
+    }
+
+    .igual:hover {
+      background-color: #43a047;
+    }
+
+    .borrar {
+      background-color: #d32f2f;
+    }
+
+    .borrar:hover {
+      background-color: #e53935;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculadora">
+    <input type="text" id="pantalla" readonly>
+    <div class="botones">
+      <button onclick="agregar('7')">7</button>
+      <button onclick="agregar('8')">8</button>
+      <button onclick="agregar('9')">9</button>
+      <button class="operador" onclick="agregar('/')">÷</button>
+
+      <button onclick="agregar('4')">4</button>
+      <button onclick="agregar('5')">5</button>
+      <button onclick="agregar('6')">6</button>
+      <button class="operador" onclick="agregar('*')">×</button>
+
+      <button onclick="agregar('1')">1</button>
+      <button onclick="agregar('2')">2</button>
+      <button onclick="agregar('3')">3</button>
+      <button class="operador" onclick="agregar('-')">−</button>
+
+      <button onclick="agregar('0')">0</button>
+      <button onclick="agregar('.')">.</button>
+      <button class="igual" onclick="calcular()">=</button>
+      <button class="operador" onclick="agregar('+')">+</button>
+
+      <button class="borrar" onclick="borrar()">C</button>
+    </div>
+  </div>
+
+  <script src="Ejercicio8script.js"></script>
+
+</body>
+</html>

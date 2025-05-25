@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Switch Stylesheets</title>
+  <link id="pagestyle" rel="stylesheet" href="light.css">
+  <style>
+    #style-switcher {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="style-switcher">
+    <label for="style">Choose style:</label>
+    <select id="style" onchange="changeStyle(this.value)">
+      <option value="light.css">Light</option>
+      <option value="dark.css">Dark</option>
+      <option value="colorful.css">Colorful</option>
+    </select>
+  </div>
+
+  <div id="container" style="width:500px">
+
+    <div id="header">
+      <h1>Main Title of Web Page</h1>
+    </div>
+
+    <div id="menu">
+      <b>Menu</b><br>
+      HTML<br>
+      CSS<br>
+      JavaScript
+    </div>
+
+    <div id="content">
+      Content goes here
+    </div>
+
+    <div id="footer">
+      Copyright © W3Schools.com
+    </div>
+
+  </div>
+
+  <script src="script3avanzado.js"></script>
+
+</body>
+</html>

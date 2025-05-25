@@ -1,0 +1,24 @@
+body {
+  background-color: #fefbd8;
+  color: #333;
+}
+
+#header {
+  background-color: #ff9999;
+  padding: 10px;
+}
+
+#menu {
+  background-color: #99ccff;
+  padding: 10px;
+}
+
+#content {
+  background-color: #99ff99;
+  padding: 10px;
+}
+
+#footer {
+  background-color: #ffff99;
+  padding: 10px;
+}

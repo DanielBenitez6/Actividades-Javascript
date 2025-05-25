@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imagenes de Coches y Spiderman</title>
+    <style id="estilo1">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .zona {
+            border: 2px solid #000;
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+        .zona img {
+            height: 300px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+    <style id="estilo2" disabled>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #222;
+            color: #eee;
+        }
+        .zona {
+            border: 2px dashed #eee;
+            padding: 20px;
+            margin: 20px;
+            background-color: #444;
+        }
+        .zona img {
+            height: 300px;
+            display: block;
+            margin-bottom: 10px;
+            border: 3px solid #fff;
+        }
+    </style>
+    <script src="ejercicio3script.js"></script>
+</head>
+<body>
+
+<h2>Zona de Coches</h2>
+<div class="zona">
+    <img id="imgCoche" src="coche1.jpg">
+    <label>Selecciona un coche:</label>
+    <select id="selectCoche" onchange="cambiaImagen('imgCoche', 'selectCoche')">
+        <option value="coche1.jpg">Coche 1</option>
+        <option value="coche2.jpg">Coche 2</option>
+        <option value="coche3.jpg">Coche 3</option>
+        <option value="coche4.jpg">Coche 4</option>
+        <option value="coche5.jpg">Coche 5</option>
+        <option value="coche6.jpg">Coche 6</option>
+    </select>
+</div>
+
+<h2>Zona de Spiderman</h2>
+<div class="zona">
+    <img id="imgSpiderman" src="spiderman1.gif">
+    <label>Selecciona una imagen de Spiderman:</label>
+    <select id="selectSpiderman" onchange="cambiaImagen('imgSpiderman', 'selectSpiderman')">
+        <option value="spiderman1.gif">Spiderman 1</option>
+        <option value="spiderman2.jpg">Spiderman 2</option>
+        <option value="spiderman3.jpg">Spiderman 3</option>
+        <option value="Spiderman4.jpg">Spiderman 4</option>
+        <option value="spiderman5.jpg">Spiderman 5</option>
+    </select>
+</div>
+
+<div style="text-align:center">
+    <label for="selectorEstilo">Selecciona un estilo:</label>
+    <select id="selectorEstilo" onchange="cambiarEstilo(this)">
+        <option value="estilo1">Estilo Claro</option>
+        <option value="estilo2">Estilo Oscuro</option>
+    </select>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio con Grupos de Botones</title>
+  <style>
+    #miParrafo {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .grupo {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Grupo A: Cambiar estilo de fuente del párrafo</h2>
+  <div class="grupo">
+    <p id="miParrafo">Este es un párrafo cuyo estilo puedes cambiar.</p>
+    <button onclick="cambiarFuente('Arial')">Arial</button>
+    <button onclick="cambiarFuente('Courier New')">Courier New</button>
+    <button onclick="cambiarFuente('Georgia')">Georgia</button>
+  </div>
+
+  <h2>Grupo B: Cambiar la imagen</h2>
+  <div class="grupo">
+    <img id="miImagen" src="imagen1.jpg" alt="Imagen" height="120">
+    <br>
+    <button onclick="cambiarImagen('imagen1.jpg')">Imagen 1</button>
+    <button onclick="cambiarImagen('imagen2.jpg')">Imagen 2</button>
+    <button onclick="cambiarImagen('imagen3.jpg')">Imagen 3</button>
+  </div>
+
+  <h2>Grupo C: Mostrar diferentes mensajes</h2>
+  <div class="grupo">
+    <button onclick="mostrarMensaje('¡Bienvenido a nuestra web!')">Mensaje 1</button>
+    <button onclick="mostrarMensaje('Gracias por visitarnos.')">Mensaje 2</button>
+    <button onclick="mostrarMensaje('¡Vuelve pronto!')">Mensaje 3</button>
+    <div id="miMensaje" style="margin-top: 10px; font-weight: bold;"></div>
+  </div>
+
+  <script src="Ejercicio5script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Functions</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, button { margin: 5px; }
+    section { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Functions Examples</h1>
+
+  <section>
+    <h2>Max of Two Numbers</h2>
+    <input type="number" id="max1">
+    <input type="number" id="max2">
+    <button onclick="showMax()">Find Max</button>
+    <p id="maxResult"></p>
+  </section>
+
+  <section>
+    <h2>Max of Three Numbers</h2>
+    <input type="number" id="max3a">
+    <input type="number" id="max3b">
+    <input type="number" id="max3c">
+    <button onclick="showMaxOfThree()">Find Max of Three</button>
+    <p id="max3Result"></p>
+  </section>
+
+  <section>
+    <h2>Is Vowel?</h2>
+    <input type="text" id="vowelChar" maxlength="1">
+    <button onclick="checkVowel()">Check</button>
+    <p id="vowelResult"></p>
+  </section>
+
+  <section>
+    <h2>Rövarspråket</h2>
+    <input type="text" id="rovarInput">
+    <button onclick="translate()">Translate</button>
+    <p id="rovarResult"></p>
+  </section>
+
+  <section>
+    <h2>Sum & Multiply</h2>
+    <input type="text" id="arrayInput" placeholder="e.g. 1,2,3,4">
+    <button onclick="showSum()">Sum</button>
+    <button onclick="showMultiply()">Multiply</button>
+    <p id="sumResult"></p>
+    <p id="multiplyResult"></p>
+  </section>
+
+  <section>
+    <h2>Reverse String</h2>
+    <input type="text" id="reverseInput">
+    <button onclick="reverseStr()">Reverse</button>
+    <p id="reverseResult"></p>
+  </section>
+
+  <section>
+    <h2>Sort Words Alphabetically</h2>
+    <input type="text" id="sortWordsInput" placeholder="e.g. dog,cat,bird">
+    <button onclick="sortWords()">Sort</button>
+    <p id="sortResult"></p>
+  </section>
+
+  <section>
+    <h2>Find Longest Word</h2>
+    <input type="text" id="longestWordsInput" placeholder="e.g. apple,banana,kiwi">
+    <button onclick="findLongestWord()">Find Longest</button>
+    <p id="longestResult"></p>
+  </section>
+
+  <section>
+    <h2>Filter Long Words</h2>
+    <input type="text" id="filterWordsInput" placeholder="e.g. apple,banana,kiwi">
+    <input type="number" id="wordLength">
+    <button onclick="filterLongWords()">Filter</button>
+    <p id="filterResult"></p>
+  </section>
+
+  <section>
+    <h2>Character Frequency</h2>
+    <input type="text" id="freqInput">
+    <button onclick="charFreq()">Get Frequency</button>
+    <p id="freqResult"></p>
+  </section>
+
+  <script src="Ejercicio10script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style Editor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    #output {
+      background-color: #ecffec;
+      padding: 20px;
+      text-align: center;
+      font-size: 40px;
+      font-family: Courier;
+      color: teal;
+    }
+
+    #controls {
+      background-color: #f88;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    label {
+      margin-right: 8px;
+    }
+
+    input[type="text"], input[type="color"], input[type="range"], select {
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="output">WebStar</div>
+
+  <div id="controls">
+    <label>color:</label>
+    <input type="color" id="textColor" onchange="updateStyles()">
+
+    <label>background-color:</label>
+    <input type="color" id="bgColor" onchange="updateStyles()">
+
+    <label>font-size:</label>
+    <input type="range" id="fontSize" min="10" max="100" value="40" onchange="updateStyles()">
+
+    <br><br>
+
+    <label>innerHTML:</label>
+    <input type="text" id="textValue" value="WebStar" oninput="updateStyles()">
+
+    <label>font:</label>
+    <select id="fontFamily" onchange="updateStyles()">
+      <option value="Courier">Courier</option>
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Georgia">Georgia</option>
+    </select>
+  </div>
+
+  <script src="script2avanzado.js"></script>
+
+</body>
+</html>
